@@ -1,0 +1,189 @@
+
+
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+/*Above size and family rules from the Style Guide*/
+
+a {
+  color:#1177d1;
+  text-decoration: underline;
+}
+
+/*a colour is from the Style Guide*/
+
+.sponsoredlinks
+{
+  color:#1177d1;
+  text-decoration: underline;
+}
+/*the previous colour for the sponsored links was white so they disappeared on the page. This is because they were affected by the style
+of the navigation bar. For this reason I created their own class and took the colour from the style guide*/
+
+.SR {
+  font-style: italic;
+  text-decoration: underline;
+}
+/*formerly color: #aa0000;*/
+
+.bold {
+  font-weight: bold;
+}
+
+
+.topnav {
+  background: #1177d1;
+  text-align: center;
+}
+/*I added text-align centre to the topnav so that the home link was not disappearing to the left side of the page */
+
+.PB {
+  text-decoration: underline;
+  font-weight: bold;
+}
+/*formerly color: #007700;*/
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  
+}
+
+nav ul.vertical, nav ul.vertical a {
+  flex-direction: column;
+  color: #222222;
+}
+
+nav ul li {
+  flex: 1 1 auto;
+  list-style-type: none;
+  
+}
+
+.currentlink {
+  background: #d3edf4;
+  color: #222222;
+}
+
+caption {
+  text-align: left;
+}
+/*I added this so that the caption matched the text on the home page better*/
+
+h4, nav ul li a { 
+  color: #ffffff;
+  text-decoration: underline;
+}
+/*Above style rules from the Style Guide.*/
+
+nav ul li a:active { 
+  text-decoration: underline;
+  background-color: #d3edf4;
+}
+
+header {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+header div {
+  padding: 0.5rem 0.8rem;
+  background-color: #002158 ;
+  color: #ffffff;
+}
+
+
+header nav ul li a {
+  display: block;
+  padding: 0.5rem 0.8rem;
+  text-align: center;
+}
+
+header nav ul li a[aria-current="true"] {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+main {
+  max-width: 50rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+article {
+  flex: 1 1 auto;
+}
+
+figure {
+  float: right;
+}
+
+figcaption {
+  font-size: 0.8rem;
+}
+
+aside {
+  flex: 0 0 auto;
+  width: 8rem;
+}
+
+footer {
+  max-width: 50rem;
+  margin: 0 auto;
+  font-size: 0.8rem;
+  padding-top: 0.5rem;
+  border-top: 1px;
+  border-style: solid;
+  border-color: #1177d1;
+}
+
+footer nav li {
+  flex: 0 0 auto;
+}
+
+footer nav li a {
+  padding: 0 0.5rem;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  margin-bottom: 1rem;
+}
+
+table th {
+  text-align: left;
+  padding: 0.3rem 0.5rem;
+}
+
+table td {
+  padding: 0.3rem 0.5rem;
+}
+
+table tbody th {
+  font-weight: normal;
+  font-style: italic;
+}
+
+table thead tr th {
+  background: #dddddd;
+}
+
+table tbody tr:nth-child(2n) th,
+table tbody tr:nth-child(2n) td {
+  background: #efefef;
+}
+
+
+table tfoot {
+  font-size: 0.8rem;
+}
+
+table tfoot p {
+  margin: 0;
+}
