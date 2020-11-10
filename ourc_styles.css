@@ -30,6 +30,8 @@ of the navigation bar. For this reason I created their own class and took the co
 
 .bold {
   font-weight: bold;
+  font-style: normal;
+  font-size: large;
 }
 
 
