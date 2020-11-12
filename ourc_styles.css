@@ -7,32 +7,19 @@ html {
 }
 /*Above size and family rules from the Style Guide*/
 
-a {
+a:hover, a:visited, a:link, a:active
+{
   color:#1177d1;
-  text-decoration: underline;
+  text-decoration: none;
 }
+
 
 /*a colour is from the Style Guide*/
 
-.sponsoredlinks
-{
-  color:#1177d1;
-  text-decoration: underline;
-}
-/*the previous colour for the sponsored links was white so they disappeared on the page. This is because they were affected by the style
-of the navigation bar. For this reason I created their own class and took the colour from the style guide*/
-
 .SR {
   font-style: italic;
-  text-decoration: underline;
 }
 /*formerly color: #aa0000;*/
-
-.bold {
-  font-weight: bold;
-  font-style: normal;
-  font-size: large;
-}
 
 
 .topnav {
@@ -42,8 +29,8 @@ of the navigation bar. For this reason I created their own class and took the co
 /*I added text-align centre to the topnav so that the home link was not disappearing to the left side of the page */
 
 .PB {
-  text-decoration: underline;
   font-weight: bold;
+  font-style: italic;
 }
 /*formerly color: #007700;*/
 
@@ -52,21 +39,23 @@ nav ul {
   flex-direction: row;
   margin: 0;
   padding: 0;
-  
 }
 
-nav ul.vertical, nav ul.vertical a {
+nav ul.vertical, nav ul.vertical a:hover, nav ul.vertical a:visited, nav ul.vertical a:link, nav ul.vertical a:active {
   flex-direction: column;
-  color: #222222;
+  color:#1177d1;
+  text-decoration:normal;
 }
+/*the previous colour for the sponsored links was white so they disappeared on the page. This is because they were affected by the style
+of the navigation bar. For this reason I created their own class and took the colour from the style guide*/
+
 
 nav ul li {
   flex: 1 1 auto;
-  list-style-type: none;
-  
+  list-style-type: none; 
 }
 
-.currentlink {
+.currentlink:hover, .currentlink:visited, .currentlink:link, .currentlink:active {
   background: #d3edf4;
   color: #222222;
 }
@@ -76,16 +65,11 @@ caption {
 }
 /*I added this so that the caption matched the text on the home page better*/
 
-h4, nav ul li a { 
-  color: #ffffff;
-  text-decoration: underline;
+nav ul li a:hover, nav ul li a:visited, nav ul li a:link, nav ul li a:active { 
+  color:#ffffff;
+  text-decoration: none;
 }
 /*Above style rules from the Style Guide.*/
-
-nav ul li a:active { 
-  text-decoration: underline;
-  background-color: #d3edf4;
-}
 
 header {
   max-width: 50rem;
@@ -99,7 +83,7 @@ header div {
 }
 
 
-header nav ul li a {
+header nav ul li a:hover, header nav ul li a:active, header nav ul li a:link, header nav ul li a:active,{
   display: block;
   padding: 0.5rem 0.8rem;
   text-align: center;
@@ -146,11 +130,15 @@ footer {
 
 footer nav li {
   flex: 0 0 auto;
-}
-
-footer nav li a {
+  text-decoration: none;
   padding: 0 0.5rem;
 }
+
+.footer {
+  text-decoration: none;
+  padding: 0 0.5rem;
+}
+
 
 table {
   width: 100%;
@@ -168,9 +156,13 @@ table td {
 }
 
 table tbody th {
-  font-weight: normal;
-  font-style: italic;
+  font-weight: bold; 
+  font-size: large;
+  background: lightgrey;
 }
+/*To make the table more readable for colour blind users, I added a light grey background to the headers
+on the table to make those lines stand out more without with contrast.  */
+
 
 table thead tr th {
   background: #dddddd;
@@ -189,3 +181,4 @@ table tfoot {
 table tfoot p {
   margin: 0;
 }
+
