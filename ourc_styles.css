@@ -1,6 +1,4 @@
 
-
-
 html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -44,7 +42,6 @@ nav ul {
 nav ul.vertical, nav ul.vertical a:hover, nav ul.vertical a:visited, nav ul.vertical a:link, nav ul.vertical a:active {
   flex-direction: column;
   color:#1177d1;
-  text-decoration:normal;
 }
 /*the previous colour for the sponsored links was white so they disappeared on the page. This is because they were affected by the style
 of the navigation bar. For this reason I created their own class and took the colour from the style guide*/
@@ -83,7 +80,7 @@ header div {
 }
 
 
-header nav ul li a:hover, header nav ul li a:active, header nav ul li a:link, header nav ul li a:active,{
+header nav ul li a:hover, header nav ul li a:active, header nav ul li a:link, header nav ul li a:active {
   display: block;
   padding: 0.5rem 0.8rem;
   text-align: center;
@@ -104,6 +101,11 @@ main {
 article {
   flex: 1 1 auto;
 }
+
+.body {
+  padding: 0.5rem 0.8rem;
+}
+/*The text on the page was too close to the left side of the screen so I added a small amount of padding to make it more usable*/
 
 figure {
   float: right;
@@ -126,18 +128,18 @@ footer {
   border-top: 1px;
   border-style: solid;
   border-color: #1177d1;
+  text-align: center;
 }
 
-footer nav li {
-  flex: 0 0 auto;
+footer li {
   text-decoration: none;
+  font-weight: bold;  
   padding: 0 0.5rem;
+  list-style: none;
+  display: inline;
 }
-
-.footer {
-  text-decoration: none;
-  padding: 0 0.5rem;
-}
+/*I made the links above bold, capitalised 'Use' and changed the CSS to spread the links out to make 
+  the writing easier to read for colour blind users */ 
 
 
 table {
